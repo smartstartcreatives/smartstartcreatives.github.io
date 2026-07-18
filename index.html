@@ -61,6 +61,12 @@
       font-weight: 700;
       text-decoration: none;
     }
+    .header-logo {
+  width: 230px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 
     .nav-links {
       display: flex;
@@ -297,9 +303,13 @@
   <header class="site-header">
     <nav class="navigation">
 
-      <a class="brand-name" href="#">
-        SmartStartCreatives
-      </a>
+      <a class="brand-name" href="#" aria-label="SmartStartCreatives home">
+  <img
+    src="images/smartstartcreatives-logo.png"
+    alt="SmartStartCreatives"
+    class="header-logo"
+  >
+</a>
 
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
