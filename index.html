@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    SmartStartCreatives | Printables for Teachers, Parents, and Learners
+  </title>
+
+  <meta
+    name="description"
+    content="Explore practical classroom resources, educational printables, teacher tools, and self-care guides from SmartStartCreatives."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #3f3a36;
+      background-color: #fffdf9;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      width: 100%;
+      background-color: #fffdf9;
+      border-bottom: 1px solid #e9e1d7;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navigation {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-name {
+      color: #69594d;
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #514941;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #9a7864;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(
+          120deg,
+          #f8f0e7 0%,
+          #fffaf4 55%,
+          #eee5da 100%
+        );
+      padding: 70px 24px;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: #8d6d59;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 720px;
+      color: #463d37;
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 22px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      color: #665d55;
+      font-size: 1.12rem;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      color: #ffffff;
+      background-color: #7f6657;
+      border: 2px solid #7f6657;
+    }
+
+    .button-primary:hover {
+      background-color: #695244;
+      border-color: #695244;
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      color: #695244;
+      background-color: transparent;
+      border: 2px solid #9a8171;
+    }
+
+    .button-secondary:hover {
+      background-color: #f3e8de;
+      transform: translateY(-2px);
+    }
+
+    /* HERO VISUAL */
+
+    .hero-visual {
+      min-height: 430px;
+      padding: 38px;
+      border-radius: 26px;
+      background-color: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 20px 50px rgba(84, 67, 56, 0.12);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-visual-badge {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background-color: #e4d4c5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6e5546;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .hero-visual h2 {
+      color: #4f433b;
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-visual p {
+      color: #74675e;
+      margin-bottom: 22px;
+    }
+
+    .feature-list {
+      list-style: none;
+      text-align: left;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .feature-list li {
+      margin: 10px 0;
+      color: #5f554e;
+    }
+
+    /* INTRO SECTION */
+
+    .intro-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .intro-section h2 {
+      color: #493f39;
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .intro-section p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #6c625b;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 28px 24px;
+      color: #6d625a;
+      background-color: #eee4da;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+      .navigation {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        padding-top: 50px;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        min-height: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navigation">
+
+      <a class="brand-name" href="#">
+        SmartStartCreatives
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <a
+            href="https://smartstartcreatives.gumroad.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Shop
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            Practical resources made with purpose
+          </span>
+
+          <h1>
+            Helping teachers create calmer, more organized classrooms.
+          </h1>
+
+          <p class="hero-description">
+            Discover thoughtfully designed classroom tools,
+            educational printables, parent communication resources,
+            and self-care guides created to save time and support
+            meaningful learning.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              class="button button-primary"
+              href="#resources"
+            >
+              Explore Resources
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://smartstartcreatives.gumroad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit the Shop
+            </a>
+
+          </div>
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="hero-visual-badge">
+            SSC
+          </div>
+
+          <h2>
+            Print. Learn. Shine.
+          </h2>
+
+          <p>
+            Practical digital resources for real classrooms
+            and meaningful everyday routines.
+          </p>
+
+          <ul class="feature-list">
+            <li>✓ Teacher-friendly resources</li>
+            <li>✓ Printer-friendly formats</li>
+            <li>✓ A4 and US Letter options</li>
+            <li>✓ Ready for practical use</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="intro-section" id="resources">
+
+      <h2>
+        Resources designed to make your work easier
+      </h2>
+
+      <p>
+        SmartStartCreatives offers practical tools for classroom
+        routines, parent communication, teacher organization,
+        learning activities, and personal wellness.
+        Featured product collections will appear here soon.
+      </p>
+
+    </section>
+
+    <section class="intro-section" id="about">
+
+      <h2>
+        About SmartStartCreatives
+      </h2>
+
+      <p>
+        SmartStartCreatives is an educator-created digital resource
+        brand focused on practical, thoughtful, and easy-to-use
+        materials for teachers, parents, learners, and busy women.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 SmartStartCreatives. All rights reserved.
+  </footer>
+
+</body>
+</html>
